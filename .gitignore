@@ -1,3 +1,11 @@
+# vscode
+.vscode/
+
+# datajoint
+dj_local_conf.json
+pipeline_config.json
+.env
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
