@@ -14,5 +14,5 @@ setup(
     url='https://github.com/cajal/at-image',
     author_email='spapadop@bcm.edu',
     packages=find_packages(exclude=[]),
-    install_requires=['numpy', 'scipy', 'matplotlib', 'pandas', 'scikit-image']
+    install_requires=['numpy', 'scipy', 'matplotlib', 'pandas', 'scikit-image', 'torch']
 )
