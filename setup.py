@@ -5,14 +5,17 @@ from os import path
 
 here = path.abspath(path.dirname(__file__))
 
+with open(path.join(here, 'requirements.txt')) as f:
+    requirements = f.read().split()
+
 setup(
-    name='atimage',
+    name='at-image',
     version='0.0.1',
-    description='image processing utilties',
-    author='Stelios Papadopoulos, Tony Ramos',
+    description='image processing utilities',
+    author='Erick Cobos, Stelios Papadopoulos',
     license="GNU LGPL",
     url='https://github.com/cajal/at-image',
     author_email='spapadop@bcm.edu',
     packages=find_packages(exclude=[]),
-    install_requires=['numpy', 'scipy', 'matplotlib', 'pandas', 'scikit-image', 'torch']
+    install_requires=requirements
 )
