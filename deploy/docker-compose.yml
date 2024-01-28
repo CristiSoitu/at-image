@@ -1,0 +1,16 @@
+version: '3'
+services:
+  jupyterlab:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/src/at-image
+      - ../notebooks:/src/notebooks
+      - /mnt:/mnt
+    ports:
+      - "${JUPYTER_HOST:-0.0.0.0}:${JUPYTER_PORT_CONTAINER:-8888}:8888"
+    env_file:
+      - .env
+    container_name: at-image-jupyterlab
+    entrypoint: /src/at-image/deploy/entrypoint.sh
