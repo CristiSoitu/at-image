@@ -1,3 +1,9 @@
+# Source
+This was copied from Stelios's repo -> https://github.com/cajal/at-image.git
+
+# To extract
+The function in the pipeline that runs a rigid, affine, and nonrigid slice to volume registration. should be here -> (https://github.com/cajal/pipeline/blob/55a68e7404490a730bddba6051ef51aaced76a4e/python/pipeline/stack.py#L1637)
+
 # at-image
 image processing and registration utilities of the Tolias Lab
 
