@@ -7,7 +7,6 @@ services:
     volumes:
       - ../:/src/at-image
       - ../notebooks:/src/notebooks
-      - /mnt:/mnt
     ports:
       - "${JUPYTER_HOST:-0.0.0.0}:${JUPYTER_PORT_CONTAINER:-8888}:8888"
     env_file:
