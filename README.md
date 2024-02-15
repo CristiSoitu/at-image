@@ -8,20 +8,25 @@ The function in the pipeline that runs a rigid, affine, and nonrigid slice to vo
 image processing and registration utilities of the Tolias Lab
 
 Requirements
-- Docker [link](https://www.docker.com/)
-- docker compose [link](https://docs.docker.com/compose/)
+- Install [Docker](https://www.docker.com/) and sign into the application. 
+Check it works by typing `docker version` at the CLI.
+- You will also need [Docker Compose](https://docs.docker.com/compose/). 
+This may have been installed with Docker. 
+If so, `docker compose version` will return something.
+If not, visit the above link.
 
 To deploy image and launch into jupyterlab:
 
 1. clone repository
 2. navigate to the deploy folder
-3. in terminal run:
+3. in the deploy folder add an empty file called `.env`
+4. in terminal run:
 ```bash
 docker compose build jupyterlab
 ```
 On the first time it will take several minutes to download the Docker image and build. 
 
-4. in the deploy folder add an empty file called `.env`
+
 
 5. Optional
 
